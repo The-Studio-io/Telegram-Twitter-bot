@@ -1,6 +1,6 @@
 # 🤖 💬 Telegram-Twitter-bot
 
-Let's build a Twitter bot for Telegram.  All of your main public tweets will be imported into your Telegram group! For an example of this in action check out the great work that Pieter Levels.io has done with his group. https://t.co/SVSZa2qfac
+Let's build a Twitter bot for Telegram.  All of your main public tweets will be imported into your Telegram group! For an example of this in action check out the great work that Pieter Levels.io has done with his group. https://t.me/levelsio
 
 
 ### Mac users we will start with NodeJS
