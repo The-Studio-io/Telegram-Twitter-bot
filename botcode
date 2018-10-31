@@ -1,0 +1,25 @@
+const TelegramBot = require("node-telegram-bot-api")
+const botToken = "bbbbbbbbbb"
+const botOpts = {polling: true}
+const bot = new TelegramBot(botToken, botOpts)
+
+bot.on("message", msg => {
+  const {message_id, date, chat, text} = msg
+  let chatId
+
+  if (chat !== undefined) {
+    chatId = chat.id
+  }
+
+  console.log("chatId", chatId)
+  console.log("message_id", message_id)
+  console.log("date", date)
+  console.log("text", text)
+  
+  // echo
+  bot.sendMessage(chatId, text);
+})
+
+bot.on("error", err => {
+  console.error("bot error", err)
+})
